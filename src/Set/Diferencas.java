@@ -3,8 +3,9 @@ package Set;
 public @interface Diferencas {
 	
 	/*
-	 * A interface Set não aceita valores repitidos, outra característica fundamental dele é o 
-	 * fato de que a ordem em que os elementos são armazenados pode não ser a ordem na qual eles foram inseridos no conjunto.
+	 * A interface Set não aceita valores repitidos, a regra de igualdade é implementada através do método equals e hashCode.
+	 * Outra característica fundamental dele é o fato de que a ordem em que os elementos são armazenados pode não ser a ordem
+	 * na qual eles foram inseridos no conjunto.
 	 *  A interface não define como deve ser este comportamento. Tal ordem varia de implementação para implementação.
 	 * 
 	 * 

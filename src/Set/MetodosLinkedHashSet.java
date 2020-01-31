@@ -64,6 +64,7 @@ public class MetodosLinkedHashSet {
 		
 		System.out.println("\n\nConcatenado os valores de lhs com lhs2");
 		clone.addAll(lhs2);
+
 		
 		for(Classe e: clone) {
 			System.out.println(e.getName() + " - " + e.getIdade());
