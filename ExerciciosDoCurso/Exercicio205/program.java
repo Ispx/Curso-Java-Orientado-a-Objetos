@@ -8,7 +8,7 @@ public class program {
 	public static void main(String[] args) {
 		/*
 		 * Este algoritmo cria cursos para um determinado instrutor,
-		 * Inseri alunos no mesmo e apresenta os alunos e a quantidade de alunos para cada curso. 
+		 * Inseri alunos no mesmo e apresenta os alunos e a quantidade de alunos para cada curso. 6+
 		 * 
 		 */
 
@@ -62,7 +62,9 @@ public class program {
 				System.out.println("Inform the name of student: ");
 				String name = sc.next();
 				student = new Alunos(regist,name);
-	
+				
+				
+				instructor.setAlunos(student);
 				student.setCursos(course);
 				instructor.getCursos().get(var).setAlunos(student);
 				
@@ -101,6 +103,14 @@ public class program {
 				
 				System.out.println("\n--------------------------------------------------------------------\n");
 			}
+			
+			
+			System.out.println("All students this instructor: ");
+				for(Alunos e : instructor.getAlunos()) {
+					System.out.println("Student: " + e.getNome() + " - Register: " + e.getRegistro()  );
+				}
+				
+				
 			sc.close();
 		}
 		else {
