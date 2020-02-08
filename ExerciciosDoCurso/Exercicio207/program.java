@@ -19,7 +19,7 @@ public class program {
 		Eleitores eleitores = new Eleitores(arquivo);
 		
 		
-		arquivo.Ler();
+		arquivo.LerArquivo();
 		eleitores.removeDuplicates();
 		
 	
