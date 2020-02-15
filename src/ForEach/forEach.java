@@ -12,8 +12,7 @@ public class forEach {
 		 * 
 		 * 
 		 */
-		
-		
+
 		List<Integer> list = new ArrayList<>();
 		list.add(1);
 		list.add(2);
@@ -23,8 +22,8 @@ public class forEach {
 		list.add(6);
 		list.add(7);
 		
-		//print all numbers
 		
+		//print all numbers
 		list.forEach(x -> {System.out.println(x);});
 		
 		//print conditional
