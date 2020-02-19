@@ -7,28 +7,34 @@ public class ExpressoesLambdas {
 	 * (int x) -> {System.out.println(x)}
 	 * 
 	 * Ex 1:
-	 * (int x) - Lista de argumentos/parâmetros explícita
+	 * (int x) - Lista de argumentos/parï¿½metros explï¿½cita
 	 *  -> - seta/flexa 
-	 *  {System.out.println(x)}	 - Corpode expressão
+	 *  {System.out.println(x)}	 - Corpode expressï¿½o
 	 * 
 	 * Ex 2:
 	 * (y,z) -> {y.getNum() + z.getNum()}
 	 * 
-	 * (y,z) - Lista de argumentos/parâmetros implicito
+	 * (y,z) - Lista de argumentos/parï¿½metros implicito
 	 * -> - Seta/flexa
-	 * {System.out.println( y.getNum() + z.getNum() )} - Corpo da expressão
+	 * {System.out.println( y.getNum() + z.getNum() )} - Corpo da expressï¿½o
 	 * 
 	 */
 	
 	
 	
 	/*
-	 * Expressões Lambdas?
-	 * Expressões lambdas só funcionam com INTERFACES FUNCIONAIS.
+	 * ExpressÃµes Lambdas?
+	 * FunÃ§Ã£o anÃ´nima de primeira classe
+	 *
+	 * Calculo lambda sÃ£o expressÃµes lamdas?
+	 * NÃ£o
 	 *
 	 *
-	 * Expressões lambdas implementa os métodos que estão definidos em uma interface funcional
-	 * Sua finalidade é a substituição de classes anônimas
+	 * ExpressÃµes lambdas sÃ³ funcionam com INTERFACES FUNCIONAIS.
+	 *
+	 *
+	 * Expressï¿½es lambdas implementa os mï¿½todos que estï¿½o definidos em uma interface funcional
+	 * Sua finalidade ï¿½ a substituiï¿½ï¿½o de classes anï¿½nimas
 	 *
 	 * 
 	 * 
@@ -38,13 +44,13 @@ public class ExpressoesLambdas {
 	/*
 	 * Interface funcional
 	 * 
-	 * Interface funcional são todas aquelas que possuem apenas um método e que são abstratos, todas essas podem ser trabalhadas com expressões lambda
+	 * Interface funcional sÃ£o todas aquelas que possuem apenas um mÃ©todo e que Ã© abstrato, suas implementaÃ§Ãµes podem/serÃ£o tratadas atravÃ©s de expressÃ£o lambda.
+	 * 	 *
+	 * Function: Uma funÃ§Ã£o que recebe dois valores como parÃ¢metro e retorna um tipo de valor, sendo estÃ© tipo e segundo parÃ¢metro.
+	 * 	 *
+	 * Predicate: FunÃ§Ã£o que recebe um Ãºnico parÃ¢metro e devolve um booleano - Sua principal funÃ§Ã£o Ã© realizar anÃ¡lises para manipulaÃ§Ã£o dos valores do objeto atravÃ©s de outro mÃ©todo.
 	 * 
-	 * Function: Uma função que recebe um único argumento
-	 * 
-	 * Predicate: Função que recebe um único parâmetro e devolve um booleano
-	 * 
-	 * Consumer: Função que recebe um único parâmetro e não devolve nada
+	 * Consumer: FunÃ§Ã£o que recebe um Ãºnico parÃ¢metro e nÃ£o devolve nada - Sua principal funcionalidade Ã© manipular os valores de um objeto
 	 * 
 	 * 
 	 * 
@@ -59,32 +65,32 @@ public class ExpressoesLambdas {
 
 			@Override
 			public void run() {
-				System.out.println("Implementação sem expressão lambda");	
+				System.out.println("Implementaï¿½ï¿½o sem expressï¿½o lambda");	
 			}
 		};
 		
 		
-		Runnable r2 = ()-> System.out.println("Implementação com expressão lambda");
+		Runnable r2 = ()-> System.out.println("Implementaï¿½ï¿½o com expressï¿½o lambda");
 		
 		
 		/*
 		Runnable r2; 
 				r2 () - Lista de argumentos
-				-> - Seta ou flexa que indica que estamos trabalhando com expressões lambda
-				System.out.println("Implementação com expressão lambda"); - Corpo da expressão
+				-> - Seta ou flexa que indica que estamos trabalhando com expressï¿½es lambda
+				System.out.println("Implementaï¿½ï¿½o com expressï¿½o lambda"); - Corpo da expressï¿½o
 	    */	
 		
 
 		/*
-		 * Devemos ficar atento ao tipo de retorno do método da interface funcional,
-		 * pois métodos com retorno diferente de void a demostração do resultado ocorrerá através da instanciação dos parâmetros do método da interface
-		 * dentro do método System.out.print
+		 * Devemos ficar atento ao tipo de retorno do mÃ©todo da interface funcional,
+		 * pois mï¿½todos com retorno diferente de void a demostraÃ§Ã£o do resultado ocorrerï¿½ atravï¿½s da instanciaï¿½ï¿½o dos parï¿½metros do mï¿½todo da interface
+		 * dentro do mÃ©todo System.out.print
 		 * 
 		 */
 		
 		/*
-		 * Não somos obrigados a especificar o type do parâmetro na instanciação do método da interace, pode ser feito implicitamente.
-		 * Caso contrário se houver mais de um parâmetro que quiser especificar o tipo do mesmo, todos os parâmetros deverão ser especificados.
+		 * Nï¿½o somos obrigados a especificar o type do parï¿½metro na instanciaÃ§Ã£o do mÃ©todo da interace, pode ser feito implicitamente.
+		 * Caso contrï¿½rio se houver mais de um parï¿½metro que quiser especificar o tipo do mesmo, todos os parï¿½metros deverï¿½o ser especificados.
 		 * 
 		 * Ex explicito:
 		 * funcional fx = (int x, int y) -> x/y;
@@ -95,7 +101,7 @@ public class ExpressoesLambdas {
 		 */
 		
 		//return type int
-		funcional f = () -> 1;
+		InterfaceFuncional f = () -> 1;
 		
 		
 		System.out.println(f.valor());
@@ -107,7 +113,7 @@ public class ExpressoesLambdas {
 		f2.textos("Ola","Bom");
 		
 		/*
-		 * corpo da expressão com condicional if
+		 * corpo da expressï¿½o com condicional if
 		 * 
 		 */
 		
